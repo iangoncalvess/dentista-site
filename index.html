@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SorriFácil Odontologia — Cuidando do seu sorriso</title>
+
+  <!-- Fontes: Playfair Display (display) + Outfit (corpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER — navegação fixa no topo
+  ============================================================ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+
+      <!-- Logo da clínica -->
+      <a href="#inicio" class="logo">
+        <span class="logo__icon"><i class="fas fa-tooth"></i></span>
+        <div class="logo__text">
+          <span class="logo__name">SorriFácil</span>
+          <span class="logo__sub">Odontologia</span>
+        </div>
+      </a>
+
+      <!-- Menu desktop -->
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#sobre">Sobre</a></li>
+          <li><a class="nav__link" href="#servicos">Serviços</a></li>
+          <li><a class="nav__link" href="#depoimentos">Depoimentos</a></li>
+          <li><a class="nav__link" href="#galeria">Galeria</a></li>
+          <li><a class="nav__link" href="#contato">Contato</a></li>
+          <li>
+            <a class="nav__link nav__cta" href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank">
+              <i class="fab fa-whatsapp"></i> Agendar
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Botão hambúrguer mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       HERO — seção principal
+  ============================================================ -->
+  <section class="hero" id="inicio">
+
+    <!-- Fundo com imagem e overlay -->
+    <div class="hero__bg">
+      <img
+        src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=1800&q=85"
+        alt="Clínica SorriFácil"
+        class="hero__img"
+      />
+      <div class="hero__overlay"></div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="container hero__content">
+      <div class="hero__tag">
+        <i class="fas fa-shield-heart"></i> Clínica certificada pelo CFO
+      </div>
+
+      <h1 class="hero__title">
+        O sorriso que<br/>
+        você sempre<br/>
+        <em>sonhou ter.</em>
+      </h1>
+
+      <p class="hero__sub">
+        Tratamentos modernos, equipe especializada e um ambiente pensado para o seu conforto. 
+        Agende sua consulta de avaliação gratuita.
+      </p>
+
+      <div class="hero__actions">
+        <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="btn btn--teal">
+          <i class="fab fa-whatsapp"></i> Agendar consulta grátis
+        </a>
+        <a href="#servicos" class="btn btn--outline-white">
+          Ver serviços <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Selos de confiança -->
+      <div class="hero__badges">
+        <div class="hero__badge">
+          <strong>+5.000</strong>
+          <span>Pacientes atendidos</span>
+        </div>
+        <div class="hero__badge">
+          <strong>12 anos</strong>
+          <span>De experiência</span>
+        </div>
+        <div class="hero__badge">
+          <strong>4.9 ★</strong>
+          <span>Avaliação média</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="hero__scroll"><i class="fas fa-chevron-down"></i></div>
+  </section>
+
+
+  <!-- ============================================================
+       SOBRE — informações da clínica
+  ============================================================ -->
+  <section class="sobre" id="sobre">
+    <div class="container sobre__grid">
+
+      <!-- Bloco visual -->
+      <div class="sobre__visual" data-reveal="left">
+        <img
+          src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80"
+          alt="Dra. Ana Lima"
+          class="sobre__img-main"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1588776814546-1ffbb172b9b4?w=400&q=80"
+          alt="Consultório"
+          class="sobre__img-secondary"
+        />
+        <!-- Card de destaque -->
+        <div class="sobre__float-card">
+          <i class="fas fa-award"></i>
+          <div>
+            <strong>CRO Certificado</strong>
+            <span>Especialistas em implantes e estética</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Texto -->
+      <div class="sobre__texto" data-reveal="right">
+        <p class="eyebrow">Quem somos</p>
+        <h2 class="section-title">
+          Cuidado dental com<br/><em>excelência e carinho</em>
+        </h2>
+        <p class="sobre__desc">
+          A SorriFácil nasceu em 2012 com uma missão clara: oferecer odontologia de alta qualidade 
+          em um ambiente acolhedor, onde cada paciente se sinta em casa.
+        </p>
+        <p class="sobre__desc">
+          Nossa equipe é formada por especialistas em todas as áreas da odontologia, utilizando 
+          tecnologia de ponta como scanner intraoral 3D, raio-X digital e laser odontológico.
+        </p>
+
+        <!-- Diferenciais -->
+        <ul class="sobre__lista">
+          <li><i class="fas fa-check-circle"></i> Avaliação inicial gratuita</li>
+          <li><i class="fas fa-check-circle"></i> Equipamentos digitais de última geração</li>
+          <li><i class="fas fa-check-circle"></i> Parcelamento em até 18x sem juros</li>
+          <li><i class="fas fa-check-circle"></i> Atendimento de segunda a sábado</li>
+        </ul>
+
+        <a href="#servicos" class="btn btn--teal">
+          Nossos serviços <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SERVIÇOS — tratamentos oferecidos
+  ============================================================ -->
+  <section class="servicos" id="servicos">
+    <div class="container">
+
+      <p class="eyebrow eyebrow--center">O que oferecemos</p>
+      <h2 class="section-title section-title--center">Nossos Tratamentos</h2>
+      <p class="section-sub">
+        Do preventivo ao estético, cuidamos do seu sorriso em todas as etapas.
+      </p>
+
+      <!-- Grade de serviços -->
+      <div class="servicos__grid">
+
+        <!-- Limpeza -->
+        <div class="servico-card" data-reveal="up">
+          <div class="servico-card__icon servico-card__icon--blue">
+            <i class="fas fa-sparkles"></i>
+          </div>
+          <h3>Limpeza e Prevenção</h3>
+          <p>Profilaxia completa com remoção de tártaro, polimento dental e aplicação de flúor para proteger seus dentes.</p>
+          <ul>
+            <li><i class="fas fa-check"></i> Profilaxia dental</li>
+            <li><i class="fas fa-check"></i> Aplicação de flúor</li>
+            <li><i class="fas fa-check"></i> Orientação de higiene</li>
+          </ul>
+          <a href="https://wa.me/5511999999999?text=Quero%20agendar%20uma%20limpeza!" target="_blank" class="servico-card__btn">
+            Agendar <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Implante -->
+        <div class="servico-card servico-card--featured" data-reveal="up" data-delay="100">
+          <div class="servico-card__badge">Mais procurado</div>
+          <div class="servico-card__icon servico-card__icon--teal">
+            <i class="fas fa-tooth"></i>
+          </div>
+          <h3>Implante Dentário</h3>
+          <p>Solução definitiva para dentes perdidos. Implantes de titânio com resultado natural, durabilidade e conforto total.</p>
+          <ul>
+            <li><i class="fas fa-check"></i> Implante unitário ou múltiplo</li>
+            <li><i class="fas fa-check"></i> All-on-4 e All-on-6</li>
+            <li><i class="fas fa-check"></i> Carga imediata</li>
+          </ul>
+          <a href="https://wa.me/5511999999999?text=Quero%20saber%20sobre%20implante!" target="_blank" class="servico-card__btn servico-card__btn--featured">
+            Agendar <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Clareamento -->
+        <div class="servico-card" data-reveal="up" data-delay="200">
+          <div class="servico-card__icon servico-card__icon--gold">
+            <i class="fas fa-sun"></i>
+          </div>
+          <h3>Clareamento Dental</h3>
+          <p>Clareamento a laser com tecnologia LED de última geração. Dentes até 8 tons mais claros em uma única sessão.</p>
+          <ul>
+            <li><i class="fas fa-check"></i> Clareamento a laser</li>
+            <li><i class="fas fa-check"></i> Clareamento caseiro</li>
+            <li><i class="fas fa-check"></i> Resultado imediato</li>
+          </ul>
+          <a href="https://wa.me/5511999999999?text=Quero%20fazer%20clareamento!" target="_blank" class="servico-card__btn">
+            Agendar <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Ortodontia -->
+        <div class="servico-card" data-reveal="up" data-delay="300">
+          <div class="servico-card__icon servico-card__icon--pink">
+            <i class="fas fa-smile"></i>
+          </div>
+          <h3>Ortodontia</h3>
+          <p>Aparelhos metálicos, estéticos e alinhadores invisíveis para corrigir o posicionamento dos dentes com conforto.</p>
+          <ul>
+            <li><i class="fas fa-check"></i> Aparelho metálico</li>
+            <li><i class="fas fa-check"></i> Aparelho estético</li>
+            <li><i class="fas fa-check"></i> Alinhadores invisíveis</li>
+          </ul>
+          <a href="https://wa.me/5511999999999?text=Quero%20saber%20sobre%20ortodontia!" target="_blank" class="servico-card__btn">
+            Agendar <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Facetas -->
+        <div class="servico-card" data-reveal="up" data-delay="400">
+          <div class="servico-card__icon servico-card__icon--purple">
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Facetas de Porcelana</h3>
+          <p>Transforme seu sorriso com lentes de contato dental. Resultados perfeitos, naturais e duradouros em poucos dias.</p>
+          <ul>
+            <li><i class="fas fa-check"></i> Facetas de porcelana</li>
+            <li><i class="fas fa-check"></i> Lentes de contato dental</li>
+            <li><i class="fas fa-check"></i> Resina composta</li>
+          </ul>
+          <a href="https://wa.me/5511999999999?text=Quero%20saber%20sobre%20facetas!" target="_blank" class="servico-card__btn">
+            Agendar <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Endodontia -->
+        <div class="servico-card" data-reveal="up" data-delay="500">
+          <div class="servico-card__icon servico-card__icon--green">
+            <i class="fas fa-heart-pulse"></i>
+          </div>
+          <h3>Endodontia</h3>
+          <p>Tratamento de canal sem dor com equipamentos modernos. Salvamos seu dente natural com segurança e eficiência.</p>
+          <ul>
+            <li><i class="fas fa-check"></i> Canal sem dor</li>
+            <li><i class="fas fa-check"></i> Retratamento</li>
+            <li><i class="fas fa-check"></i> Microscopia</li>
+          </ul>
+          <a href="https://wa.me/5511999999999?text=Preciso%20de%20tratamento%20de%20canal!" target="_blank" class="servico-card__btn">
+            Agendar <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       DEPOIMENTOS — avaliações de pacientes
+  ============================================================ -->
+  <section class="depoimentos" id="depoimentos">
+    <div class="container">
+
+      <p class="eyebrow eyebrow--center">Quem já sorriu com a gente</p>
+      <h2 class="section-title section-title--center">Depoimentos</h2>
+
+      <!-- Carrossel -->
+      <div class="dep-wrapper">
+        <div class="dep-track" id="depTrack">
+
+          <div class="dep-card">
+            <div class="dep-card__stars">★★★★★</div>
+            <p>"Fiz meu implante na SorriFácil e a experiência foi incrível. A Dra. Ana é extremamente cuidadosa e atenciosa. O resultado ficou perfeito, parece dente natural. Super recomendo!"</p>
+            <div class="dep-card__autor">
+              <div class="dep-card__avatar">CM</div>
+              <div>
+                <strong>Carla Mendes</strong>
+                <span>Implante dentário — 2023</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dep-card">
+            <div class="dep-card__stars">★★★★★</div>
+            <p>"Tinha muito medo de dentista, mas a equipe da SorriFácil me deixou completamente à vontade. Fiz o clareamento a laser e saí com o sorriso dos sonhos em uma única sessão!"</p>
+            <div class="dep-card__autor">
+              <div class="dep-card__avatar">RT</div>
+              <div>
+                <strong>Rafael Torres</strong>
+                <span>Clareamento dental — 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dep-card">
+            <div class="dep-card__stars">★★★★★</div>
+            <p>"As facetas de porcelana transformaram meu sorriso e minha autoestima. O atendimento é de excelência do início ao fim. Clínica impecável, equipamentos modernos e equipe nota 10!"</p>
+            <div class="dep-card__autor">
+              <div class="dep-card__avatar">JS</div>
+              <div>
+                <strong>Julia Santos</strong>
+                <span>Facetas de porcelana — 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dep-card">
+            <div class="dep-card__stars">★★★★★</div>
+            <p>"Tratei meu canal aqui e foi completamente sem dor. Não acreditei! O Dr. Pedro é muito habilidoso. Ambiente limpo, organizado e acolhedor. Já indiquei para toda minha família."</p>
+            <div class="dep-card__autor">
+              <div class="dep-card__avatar">MO</div>
+              <div>
+                <strong>Marcos Oliveira</strong>
+                <span>Endodontia — 2023</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controles do carrossel -->
+        <div class="dep-controls">
+          <button class="dep-btn" id="depPrev" aria-label="Anterior">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <div class="dep-dots" id="depDots"></div>
+          <button class="dep-btn" id="depNext" aria-label="Próximo">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       GALERIA — fotos da clínica e resultados
+  ============================================================ -->
+  <section class="galeria" id="galeria">
+    <div class="container">
+
+      <p class="eyebrow eyebrow--center">Nossa clínica</p>
+      <h2 class="section-title section-title--center">Galeria</h2>
+      <p class="section-sub">Conheça nosso espaço e alguns dos resultados que transformamos.</p>
+
+      <!-- Grade de fotos -->
+      <div class="galeria__grid">
+
+        <div class="galeria__item galeria__item--large" data-reveal="up" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80" alt="Consultório moderno"/>
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+
+        <div class="galeria__item" data-reveal="up" data-delay="100" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&q=80" alt="Equipamentos modernos"/>
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+
+        <div class="galeria__item" data-reveal="up" data-delay="200" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1588776814546-1ffbb172b9b4?w=600&q=80" alt="Sala de espera"/>
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+
+        <div class="galeria__item" data-reveal="up" data-delay="300" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80" alt="Atendimento"/>
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+
+        <div class="galeria__item" data-reveal="up" data-delay="400" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80" alt="Tratamento dental"/>
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+
+        <div class="galeria__item galeria__item--tall" data-reveal="up" data-delay="500" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=600&q=80" alt="Sorriso resultado"/>
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTATO — informações e botão WhatsApp
+  ============================================================ -->
+  <section class="contato" id="contato">
+    <div class="container contato__grid">
+
+      <!-- Informações -->
+      <div class="contato__info" data-reveal="left">
+        <p class="eyebrow">Fale conosco</p>
+        <h2 class="section-title">Agende sua<br/><em>consulta hoje</em></h2>
+        <p class="contato__desc">
+          A primeira consulta é gratuita! Nossa equipe está pronta para te atender 
+          e criar o plano de tratamento ideal para você.
+        </p>
+
+        <ul class="contato__lista">
+          <li>
+            <div class="contato__icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Endereço</strong>
+              <span>Rua das Flores, 348 — Jardim Paulista<br/>São Paulo, SP — CEP 01403-000</span>
+            </div>
+          </li>
+          <li>
+            <div class="contato__icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <strong>Telefone</strong>
+              <span>(11) 3456-7890</span>
+            </div>
+          </li>
+          <li>
+            <div class="contato__icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <strong>WhatsApp</strong>
+              <span>(11) 99999-9999</span>
+            </div>
+          </li>
+          <li>
+            <div class="contato__icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong>Horário</strong>
+              <span>Seg–Sex: 8h–19h<br/>Sábado: 8h–14h</span>
+            </div>
+          </li>
+        </ul>
+
+        <a
+          href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20gratuita."
+          target="_blank"
+          class="btn btn--teal btn--lg"
+        >
+          <i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp
+        </a>
+      </div>
+
+      <!-- Mapa -->
+      <div class="contato__mapa" data-reveal="right">
+        <iframe
+          title="Localização SorriFácil"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.098847745744!2d-46.6548!3d-23.5629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzQ2LjQiUyA0NsKwMzknMTcuMyJX!5e0!3m2!1spt-BR!2sbr!4v1680000000000"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <!-- Marca -->
+      <div class="footer__brand">
+        <a href="#inicio" class="logo logo--white">
+          <span class="logo__icon"><i class="fas fa-tooth"></i></span>
+          <div class="logo__text">
+            <span class="logo__name">SorriFácil</span>
+            <span class="logo__sub">Odontologia</span>
+          </div>
+        </a>
+        <p>Transformando sorrisos e vidas com cuidado, tecnologia e excelência desde 2012.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/5511999999999" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Links -->
+      <div class="footer__col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#sobre">Sobre a clínica</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <!-- Serviços -->
+      <div class="footer__col">
+        <h4>Tratamentos</h4>
+        <ul>
+          <li><a href="#servicos">Limpeza e Prevenção</a></li>
+          <li><a href="#servicos">Implante Dentário</a></li>
+          <li><a href="#servicos">Clareamento Dental</a></li>
+          <li><a href="#servicos">Ortodontia</a></li>
+          <li><a href="#servicos">Facetas de Porcelana</a></li>
+        </ul>
+      </div>
+
+      <!-- Contato -->
+      <div class="footer__col">
+        <h4>Contato</h4>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Rua das Flores, 348 — SP</li>
+          <li><i class="fas fa-phone"></i> (11) 3456-7890</li>
+          <li><i class="fab fa-whatsapp"></i> (11) 99999-9999</li>
+          <li><i class="fas fa-envelope"></i> contato@sorrifacil.com.br</li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer__copy">
+      <p>© 2024 SorriFácil Odontologia. Todos os direitos reservados. CRO-SP 12345</p>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       BOTÃO WHATSAPP FLUTUANTE
+  ============================================================ -->
+  <a
+    href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
+    target="_blank"
+    class="wa-float"
+    aria-label="WhatsApp"
+  >
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-float__tooltip">Agendar consulta!</span>
+  </a>
+
+
+  <!-- ============================================================
+       LIGHTBOX — visualizar foto em tela cheia
+  ============================================================ -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox__close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+    <img id="lightboxImg" src="" alt=""/>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
