@@ -706,7 +706,15 @@ ul  { list-style: none; }
 .galeria__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 240px 300px;
   gap: 1rem;
+}
+.galeria__item--large {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.galeria__item--tall {
+  grid-row: span 2;
 }
 
 .galeria__item {
@@ -714,7 +722,6 @@ ul  { list-style: none; }
   border-radius: var(--radius);
   overflow: hidden;
   cursor: pointer;
-  height: 240px;
 }
 .galeria__item img {
   height: 100%;
@@ -973,12 +980,7 @@ ul  { list-style: none; }
 [data-reveal="left"]  { transform: translateX(-36px); }
 [data-reveal="right"] { transform: translateX(36px); }
 [data-reveal="up"]    { transform: translateY(36px); }
-[data-reveal].visible { opacity: 1 !important; transform: translate(0) !important; }
-
-/* Fallback: mostra tudo se JS não carregar */
-@media print {
-  [data-reveal] { opacity: 1 !important; transform: none !important; }
-}
+[data-reveal].visible { opacity: 1; transform: translate(0); }
 
 /* =========================================================
    14. RESPONSIVO — TABLET
