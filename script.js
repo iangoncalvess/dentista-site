@@ -133,7 +133,7 @@ window.addEventListener('resize', () => goTo(current));
 /* =========================================================
    3. REVEAL AO SCROLL — elementos entram com animação
 ========================================================= */
-const revealEls = document.querySelectorAll('[data-reveal]');
+
 
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
