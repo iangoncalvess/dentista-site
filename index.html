@@ -64,7 +64,7 @@
     <!-- Fundo com imagem e overlay -->
     <div class="hero__bg">
       <img
-        src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=1800&q=85"
+        src="img/profissional.jpg"
         alt="Clínica SorriFácil"
         class="hero__img"
       />
@@ -126,14 +126,14 @@
     <div class="container sobre__grid">
 
       <!-- Bloco visual -->
-      <div class="sobre__visual" data-reveal="left">
+      <div class="sobre__visual">
         <img
-          src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80"
+          src="img/sorriso.jpg"
           alt="Dra. Ana Lima"
           class="sobre__img-main"
         />
         <img
-          src="https://images.unsplash.com/photo-1588776814546-1ffbb172b9b4?w=400&q=80"
+          src="img/sala-espera.jpg"
           alt="Consultório"
           class="sobre__img-secondary"
         />
@@ -148,7 +148,7 @@
       </div>
 
       <!-- Texto -->
-      <div class="sobre__texto" data-reveal="right">
+      <div class="sobre__texto">
         <p class="eyebrow">Quem somos</p>
         <h2 class="section-title">
           Cuidado dental com<br/><em>excelência e carinho</em>
@@ -194,7 +194,7 @@
       <div class="servicos__grid">
 
         <!-- Limpeza -->
-        <div class="servico-card" data-reveal="up">
+        <div class="servico-card">
           <div class="servico-card__icon servico-card__icon--blue">
             <i class="fas fa-sparkles"></i>
           </div>
@@ -211,7 +211,7 @@
         </div>
 
         <!-- Implante -->
-        <div class="servico-card servico-card--featured" data-reveal="up" data-delay="100">
+        <div class="servico-card servico-card--featured">
           <div class="servico-card__badge">Mais procurado</div>
           <div class="servico-card__icon servico-card__icon--teal">
             <i class="fas fa-tooth"></i>
@@ -229,7 +229,7 @@
         </div>
 
         <!-- Clareamento -->
-        <div class="servico-card" data-reveal="up" data-delay="200">
+        <div class="servico-card">
           <div class="servico-card__icon servico-card__icon--gold">
             <i class="fas fa-sun"></i>
           </div>
@@ -246,7 +246,7 @@
         </div>
 
         <!-- Ortodontia -->
-        <div class="servico-card" data-reveal="up" data-delay="300">
+        <div class="servico-card">
           <div class="servico-card__icon servico-card__icon--pink">
             <i class="fas fa-smile"></i>
           </div>
@@ -263,7 +263,7 @@
         </div>
 
         <!-- Facetas -->
-        <div class="servico-card" data-reveal="up" data-delay="400">
+        <div class="servico-card">
           <div class="servico-card__icon servico-card__icon--purple">
             <i class="fas fa-star"></i>
           </div>
@@ -280,7 +280,7 @@
         </div>
 
         <!-- Endodontia -->
-        <div class="servico-card" data-reveal="up" data-delay="500">
+        <div class="servico-card">
           <div class="servico-card__icon servico-card__icon--green">
             <i class="fas fa-heart-pulse"></i>
           </div>
@@ -389,36 +389,51 @@
       <h2 class="section-title section-title--center">Galeria</h2>
       <p class="section-sub">Conheça nosso espaço e alguns dos resultados que transformamos.</p>
 
-      <!-- Grade de fotos -->
+            <!-- Grade de fotos -->
       <div class="galeria__grid">
 
-        <div class="galeria__item galeria__item--large" data-reveal="up" onclick="openLightbox(this)">
-          <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80" alt="Consultório moderno"/>
+        <div class="galeria__item" onclick="openLightbox(this)">
+          <img src="img/profissional.jpg" alt="Profissional"/>
           <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
         </div>
 
-        <div class="galeria__item" data-reveal="up" data-delay="100" onclick="openLightbox(this)">
-          <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&q=80" alt="Equipamentos modernos"/>
+        <div class="galeria__item" onclick="openLightbox(this)">
+          <img src="img/cuidado.jpg" alt="Cuidado"/>
           <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
         </div>
 
-        <div class="galeria__item" data-reveal="up" data-delay="200" onclick="openLightbox(this)">
-          <img src="https://images.unsplash.com/photo-1588776814546-1ffbb172b9b4?w=600&q=80" alt="Sala de espera"/>
+        <div class="galeria__item" onclick="openLightbox(this)">
+          <img src="img/sala-espera.jpg" alt="Sala de espera"/>
           <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
         </div>
 
-        <div class="galeria__item" data-reveal="up" data-delay="300" onclick="openLightbox(this)">
-          <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80" alt="Atendimento"/>
+        <div class="galeria__item" onclick="openLightbox(this)">
+          <img src="img/tratamento.jpg" alt="Tratamento dental"/>
           <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
         </div>
 
-        <div class="galeria__item" data-reveal="up" data-delay="400" onclick="openLightbox(this)">
-          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80" alt="Tratamento dental"/>
+        <div class="galeria__item" onclick="openLightbox(this)">
+          <img src="img/sorriso.jpg" alt="Sorriso resultado"/>
           <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
         </div>
 
-        <div class="galeria__item galeria__item--tall" data-reveal="up" data-delay="500" onclick="openLightbox(this)">
-          <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=600&q=80" alt="Sorriso resultado"/>
+        <div class="galeria__item" onclick="openLightbox(this)">
+          <img src="img/felicidade.jpg" alt="Felicidade"/>
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+
+        <div class="galeria__item" onclick="openLightbox(this)">
+          <img src="img/paixao.jpg" alt="Paixão"/>
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+
+        <div class="galeria__item" onclick="openLightbox(this)">
+          <img src="img/raiox.jpg" alt="Raio-X"/>
+          <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+
+        <div class="galeria__item" onclick="openLightbox(this)">
+          <img src="img/educacao.jpg" alt="Educação"/>
           <div class="galeria__overlay"><i class="fas fa-expand"></i></div>
         </div>
 
@@ -434,7 +449,7 @@
     <div class="container contato__grid">
 
       <!-- Informações -->
-      <div class="contato__info" data-reveal="left">
+      <div class="contato__info">
         <p class="eyebrow">Fale conosco</p>
         <h2 class="section-title">Agende sua<br/><em>consulta hoje</em></h2>
         <p class="contato__desc">
@@ -483,7 +498,7 @@
       </div>
 
       <!-- Mapa -->
-      <div class="contato__mapa" data-reveal="right">
+      <div class="contato__mapa">
         <iframe
           title="Localização SorriFácil"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.098847745744!2d-46.6548!3d-23.5629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzQ2LjQiUyA0NsKwMzknMTcuMyJX!5e0!3m2!1spt-BR!2sbr!4v1680000000000"
@@ -551,7 +566,7 @@
           <li><i class="fas fa-map-marker-alt"></i> Rua das Flores, 348 — SP</li>
           <li><i class="fas fa-phone"></i> (11) 3456-7890</li>
           <li><i class="fab fa-whatsapp"></i> (11) 99999-9999</li>
-          <li><i class="fas fa-envelope"></i> contato@sorrifacil.com.br</li>
+          <li><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a0c3cfced4c1d4cfe0d3cfd2d2c9c6c1c3c9cc8ec3cfcd8ec2d2">[email&#160;protected]</a></li>
         </ul>
       </div>
 
@@ -580,11 +595,4 @@
        LIGHTBOX — visualizar foto em tela cheia
   ============================================================ -->
   <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-    <button class="lightbox__close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
-    <img id="lightboxImg" src="" alt=""/>
-  </div>
-
-
-  <script src="script.js"></script>
-</body>
-</html>
+    <button class="lightbox__close" onclick="closeLightbox()"><i class="fas fa-times"
